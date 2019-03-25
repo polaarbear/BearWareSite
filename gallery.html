@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Aaron Smith
+06/09/2018
+index.html
+-->
+<html lang=en>
+    <head>
+        <!-- The heading is replicated on every page -->
+        <title>Welcome to BearWare</title>
+        <!-- Keywords for search engine hits -->
+        <meta name="keywords" content="Software Design" />
+        <!--The default character set-->
+        <meta charset="UTF-8" />
+        <!--Constrains the viewport to size of the user's device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--The style sheets must be linked to control the layout and visual styles of the page-->
+        <link href="layout.css" rel="stylesheet">
+        <link href="styling.css" rel="stylesheet">
+        <link href="modal.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <img src="bear.png" alt="bannerimage" />
+        </header>
+        <!--The navigation panel is the same across all pages-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Info</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <article>
+            <figure>
+                <h2>Dramatic Bearhog</h2>
+                <a href="#bearhog">
+                    <img src="bearhogthumb.jpg" alt="bearhogthumb">
+                </a>
+                <figcaption>Dramatic Bearhog emulates his favorite meme.</figcaption>
+                <video controls>
+                    <source src="dramaticgopher.mp4" type="video/mp4" />
+                </video>
+            </figure>
+            
+            <!--These divs allow a popup viewer to be hidden out of view-->
+            <div class="modal" id="bearhog">
+                <div class="modal-container">
+                    <img src="bearhog.jpg" alt="bearhogimg"><BR />
+                    <a href="#">Close</a>                    
+            </div>        
+        </div>            
+            <figure>
+                <h2>P.O.O.H. Bear</h2>
+                <a href="#pbear"><img src="pbearthumb.jpg" alt="pbearthumb">
+                </a>
+                <figcaption>P. Bear ate way too much.</figcaption>
+            </figure>
+            <div class="modal" id="pbear">
+                <div class="modal-container">
+                    <img src="pbear.jpg" alt="pbearimg"><BR />
+                    <a href="#">Close</a>
+            </div>        
+        </div>
+            <figure>
+                <h2>Hear Us Roar!</h2>
+                <a href="#roarbear">
+                    <img src="roarbearthumb.jpg" alt="roarbearthumb">
+                </a>
+                <figcaption>Pole Heir sings the song of his people!</figcaption>
+                <audio controls>
+                    <source src="roar.mp3" type="audio/mp3" />
+                </audio>
+            </figure>
+            <div class="modal" id="roarbear">
+                <div class="modal-container">
+                    <img src="roarbear.jpg" alt="roarbearimg"><BR />
+                    <a href="#">Close</a>
+                </div>        
+            </div>
+        </article>
+        
+        <footer>
+            Questions? Comments?
+            <BR />
+            Email Us At: <a href="mailto:ASmith584@CapellaUniversity.edu">ASmith584@CapellaUniversity.edu</a>
+            <BR />
+            This page &copy;2018 Bearware
+        </footer>
+    
+    </body>
+</html>

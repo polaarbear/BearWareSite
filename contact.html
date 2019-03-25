@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+Aaron Smith
+06/14/2018
+contact.html
+-->
+<html lang=en>
+    <head>
+        <!-- The heading is replicated on every page -->
+        <title>Welcome to BearWare</title>
+        <!-- Keywords for search engine hits -->
+        <meta name="keywords" content="Software Design" />
+        <!--The default character set-->
+        <meta charset="UTF-8" />
+        <!--Constrains the viewport to size of the user's device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--The style sheets must be linked to control the layout and visual styles of the page-->
+        <link href="layout.css" rel="stylesheet">
+        <link href="styling.css" rel="stylesheet">
+        <link href="formformat.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <img src="bear.png" alt="bannerimage" />
+        </header>
+        <!--The navigation panel is the same across all pages-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Info</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        
+        <article>
+            <table id="contactinfo">
+                <tr>
+                    <th>Give Us A Roar!!</th>
+                </tr>
+                <tr><td>Call us up today at <a href="tel:1-555-EAT-MEAT">1-555-EAT-MEAT</a></td></tr>
+                <tr><td>Email us at <a href="mailto:ASmith584@CapellaUniversity.edu">ASmith584@CapellaUniversity.edu</a></td></tr>
+                <tr><td>Visit our cave! 9999 Hundred Thousand Acre Wood, Kristofersen Way, Robin AK 50212</td></tr>
+            </table>
+            <aside>
+            <form id="contactform" action="response_page.php" method="post">
+                <fieldset id="personalinfo">
+                    <legend>How Did We Do?</legend>
+                    <div class="formRow">
+                        <label for="name">Your Name</label>
+                        <input name="yourname" id="name" type="text" />
+                    </div>
+                    <div class="formRow">
+                        <label for="street">Street</label>
+                        <input name="streetaddress" id="street" type="text" />
+                    </div>
+                    <div class="formRow">
+                        <label for="city">City</label>
+                        <input name="nameofcity" id="city" type="text" />
+                    </div>
+                    <div class="formRow">
+                        <label for="state">State</label>
+                        <input name="residentstate" id="state" type="text" />
+                    </div>
+                    <div class="formRow">
+                        <label for="zip">Zip</label>
+                        <input name="zipcode" id="zip" type="text" />
+                    </div>
+                    <div class="formRow">
+                        <label for="phone">Phone</label>
+                        <input name="phonenumber" id="phone" type="tel" />
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Email</label>
+                        <input name="emailaddress" id="email" type="email" />
+                    </div>
+                </fieldset>
+                <fieldset id="satisfaction">
+                    <legend>Did You Find What You Needed Today?</legend>
+                    <div class="formRow">
+                    <label for="yesradio">Yes</label>
+                    <input name="selectyes" id="yesradio" type="radio">
+                    </div>
+                    <div class="formRow">
+                        <label for="noradio">No</label>
+                        <input name="selectno" id="noradio" type="radio">
+                    </div>
+                </fieldset>
+                
+                <fieldset id="howdidyouhear">
+                    <legend>How Did You Hear About Us?</legend>
+                    <div class="formRow">
+                        <select>
+                            <option value="Google Search">Google Search</option>
+                            <option value="Friend/Family">Friend/Family</option>
+                            <option value="Classified Ad">Classified Ad</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </fieldset>
+                
+                <fieldset id="othercomments">
+                    <legend>Other Comments?</legend>
+                    <div class="formRow">
+                        <textarea>Insert comments here...</textarea>
+                    </div>
+                </fieldset>
+                <fieldset id="submitbutton">
+                    <input value="Submit Form" type="submit">
+                </fieldset>
+            </form>
+            </aside>
+        </article>
+        
+        <footer>
+            Questions? Comments?
+            <BR />
+            Email Us At: <a href="mailto:ASmith584@CapellaUniversity.edu">ASmith584@CapellaUniversity.edu</a>
+            <BR />
+            This page &copy;2018 Bearware
+        </footer>
+    
+    </body>
+</html>

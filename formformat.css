@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*
+@aarjs
+filename formformat.css
+*/
+
+fieldset div.formRow {
+    padding: 2%;
+}
+fieldset legend {
+    font-size: 1.2em;
+    text-shadow: 1px 2px rgb(255, 50, 0);
+}
+fieldset label {
+    float: left;
+    clear: left;
+    width: 25%;
+    text-align: center;
+    background-color: rgb(255, 75, 0);
+    color: black;
+}
+
+fieldset input {
+    width: 70%;
+    text-align: center;
+    background-color: rgb(255, 75, 0);
+    color: white;
+}
+
+fieldset select {
+    width: 60%;
+}
+
+fieldset textarea {
+    width: 60%;
+    text-align: left;
+    min-height: 100px;
+}
